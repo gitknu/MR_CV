@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR CV</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+    
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: "Raleway", sans-serif;
+        }
+        
+        h1, h2, .image, .background, .me, ol {
+            position: absolute; 
+        }
+        
+        body, html, .me, .background {
+           width: 100%;
+           height: 100%;
+        }
+        
+        h1, h2, ol {
+            left: 5vw;
+            z-index: 2; 
+            color: #373b38;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        h1 {
+            top 5vh;
+            font-size: 7vh;
+        }
+        
+        h2 {
+            top: 10vh;
+            font-size: 5vh;
+        }
+        
+        ol {
+            top: 20vh;
+            font-size: 3vh;
+        }
+        
+        .image {
+            bottom: 0;
+            right: 0;
+            max-height: 80%;
+            z-index: 1;
+        }
+        .background {
+            background: linear-gradient(45deg, #ff7e5f, #feb47b, #ffdd95, #87edff, #6df3ff, #a7fffb, #ff9cf9);
+            background-size: 200% 200%;
+            animation: backgroundAnimation 20s ease-in-out infinite;
+            z-index: 0;
+        }
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="me">
+        <h1>My name is Mykhailo</h1>
+        <h2>and this is what I can</h2>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <img src="https://i.ibb.co/yWtx0Hv/misha-transformed.png" class="image">
+        <div class="background"></div>
+    </div>
+</body>
+</html>
